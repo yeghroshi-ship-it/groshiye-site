@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — GroshiYe (ГрошіЄ)</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <nav class="nav">
+    <a class="brand" href="index.html">
+      <svg width="24" height="28" viewBox="0 0 26 30" fill="none"><path d="M2 3c0-1.1.9-2 2-2h18c1.1 0 2 .9 2 2v23l-2.75-2-2.75 2-2.75-2-2.75 2-2.75-2-2.75 2-2.75-2L2 26V3z" fill="var(--paper)"/><circle cx="9.5" cy="11" r="3.2" fill="#fff" stroke="#04130d" stroke-width="1.1"/><circle cx="16.5" cy="11" r="3.2" fill="#fff" stroke="#04130d" stroke-width="1.1"/><circle cx="10.1" cy="11.8" r="1.5" fill="#04130d"/><circle cx="17.1" cy="11.8" r="1.5" fill="#04130d"/><path d="M10 19c1.8 1.6 4.2 1.6 6 0" stroke="#04130d" stroke-width="1.3" stroke-linecap="round"/></svg>
+      ГрошіЄ
+    </a>
+    <span class="lang"><a href="privacy.html">Українська</a></span>
+  </nav>
+
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: July 14, 2026</p>
+
+  <p>GroshiYe (ГрошіЄ) is a personal expense tracking app built for Ukraine. Our principle is simple: <b>your financial data belongs to you</b>. We do not sell data, show ads, or track you across the internet.</p>
+
+  <h2>1. Data we collect</h2>
+  <ul>
+    <li><b>Account:</b> email and name (with Apple or Google sign-in — only what you allow to share). Passwords are stored as hashes only.</li>
+    <li><b>monobank transactions:</b> only if you connect your bank yourself by confirming access in the monobank app (the bank's official partner API, <b>read-only</b> access to statements and account names). We never see your banking credentials and cannot move money.</li>
+    <li><b>Receipt data:</b> when you scan a fiscal receipt QR code, we fetch the receipt contents (store, items, amounts) from the open registry of the State Tax Service of Ukraine.</li>
+    <li><b>Your settings:</b> categories, budgets, notes — everything you create in the app.</li>
+  </ul>
+
+  <h2>2. How we use data</h2>
+  <ul>
+    <li>To show <b>you</b> your own spending, reports and budgets. That's it.</li>
+    <li>Item names from receipts (without amounts, your name, or any personal data) are processed by an AI service for automatic categorization.</li>
+    <li>Push notifications (reminders, budget alerts) are sent only if you enable them.</li>
+  </ul>
+
+  <h2>3. Where data is stored</h2>
+  <p>On Supabase servers in the <b>eu-central-1 (Frankfurt, EU)</b> data center. Connections are TLS-encrypted; data is encrypted at rest. Bank access keys never leave the server.</p>
+
+  <h2>4. Who we share data with</h2>
+  <p>We <b>do not sell</b> personal data and do not share it with ad networks. Service providers we rely on:</p>
+  <ul>
+    <li><b>Supabase</b> — database and authentication (EU);</li>
+    <li><b>Apple</b> — push notifications and subscription processing;</li>
+    <li><b>RevenueCat</b> — subscription status (no payment data — Apple handles payments);</li>
+    <li><b>monobank</b> — bank statements, with your explicit consent;</li>
+    <li><b>State Tax Service of Ukraine</b> — receipt lookup by QR code;</li>
+    <li><b>Anthropic</b> — categorization of item names (item names only, no personal data).</li>
+  </ul>
+
+  <h2>5. Retention and deletion</h2>
+  <p>Data is kept while your account exists. You can delete everything in the app: <b>Profile → Delete account</b> — your account, transactions, receipts and settings are erased immediately and permanently. Bank access can be revoked separately in the monobank app.</p>
+
+  <h2>6. Your rights</h2>
+  <p>You may access, correct, or delete your data, and withdraw consent at any time — in the app or by emailing <a href="mailto:xiix.network@gmail.com">xiix.network@gmail.com</a>.</p>
+
+  <h2>7. Age</h2>
+  <p>Bank connection requires age 16+ (a monobank API requirement).</p>
+
+  <h2>8. Changes</h2>
+  <p>If this policy changes, we will update the date above and notify about material changes in the app.</p>
+
+  <div class="card small dim">Privacy questions: <a href="mailto:xiix.network@gmail.com">xiix.network@gmail.com</a></div>
+
+  <footer class="footer">
+    <a href="index.html">Home</a>
+    <a href="terms.html">Terms of Use</a>
+    <a href="support.html">Support</a>
+    <span style="margin-left:auto">© 2026 ГрошіЄ</span>
+  </footer>
+</div>
+</body>
+</html>
